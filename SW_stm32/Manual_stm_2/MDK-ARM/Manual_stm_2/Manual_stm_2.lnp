@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"manual_stm_2\startup_stm32f103xb.o"
+"manual_stm_2\main.o"
+"manual_stm_2\stm32f1xx_it.o"
+"manual_stm_2\stm32f1xx_hal_msp.o"
+"manual_stm_2\stm32f1xx_hal_gpio_ex.o"
+"manual_stm_2\stm32f1xx_hal_tim.o"
+"manual_stm_2\stm32f1xx_hal_tim_ex.o"
+"manual_stm_2\stm32f1xx_hal.o"
+"manual_stm_2\stm32f1xx_hal_rcc.o"
+"manual_stm_2\stm32f1xx_hal_rcc_ex.o"
+"manual_stm_2\stm32f1xx_hal_gpio.o"
+"manual_stm_2\stm32f1xx_hal_dma.o"
+"manual_stm_2\stm32f1xx_hal_cortex.o"
+"manual_stm_2\stm32f1xx_hal_pwr.o"
+"manual_stm_2\stm32f1xx_hal_flash.o"
+"manual_stm_2\stm32f1xx_hal_flash_ex.o"
+"manual_stm_2\stm32f1xx_hal_exti.o"
+"manual_stm_2\stm32f1xx_hal_uart.o"
+"manual_stm_2\system_stm32f1xx.o"
+--strict --scatter "Manual_stm_2\Manual_stm_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Manual_stm_2.map" -o Manual_stm_2\Manual_stm_2.axf

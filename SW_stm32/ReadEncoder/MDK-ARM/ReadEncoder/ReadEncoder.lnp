@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"readencoder\startup_stm32f103xb.o"
+"readencoder\main.o"
+"readencoder\stm32f1xx_it.o"
+"readencoder\stm32f1xx_hal_msp.o"
+"readencoder\stm32f1xx_hal_gpio_ex.o"
+"readencoder\stm32f1xx_hal_tim.o"
+"readencoder\stm32f1xx_hal_tim_ex.o"
+"readencoder\stm32f1xx_hal.o"
+"readencoder\stm32f1xx_hal_rcc.o"
+"readencoder\stm32f1xx_hal_rcc_ex.o"
+"readencoder\stm32f1xx_hal_gpio.o"
+"readencoder\stm32f1xx_hal_dma.o"
+"readencoder\stm32f1xx_hal_cortex.o"
+"readencoder\stm32f1xx_hal_pwr.o"
+"readencoder\stm32f1xx_hal_flash.o"
+"readencoder\stm32f1xx_hal_flash_ex.o"
+"readencoder\stm32f1xx_hal_exti.o"
+"readencoder\system_stm32f1xx.o"
+--strict --scatter "ReadEncoder\ReadEncoder.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ReadEncoder.map" -o ReadEncoder\ReadEncoder.axf
